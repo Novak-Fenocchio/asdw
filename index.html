@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .relativeContainer {
+          position: relative;
+          width: 800px;
+          height: 500px;
+          background-color: aquamarine;
+          
+        }
+    
+        #noacepto {
+          position: absolute;
+          top: 230px;
+          left: 30px;
+        }
+      </style>
+
+
+</head>
+<body>
+    <h1>
+    hey caro no encuentro la forma elegante de decirtelo: 
+    </h1>
+
+
+    <h5>quiero ver chueck con vos</h5>
+    <input type="button" id='acepto' value="acepto">
+    <input type="button" id='noacepto' value="no acepto">
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+
+
+    <script>
+        $('#acepto').on('click', function(){
+            alert('teamo');
+            alert('ahora apreta que no.');
+        })
+
+        function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+        }
+
+        let veces = 0;
+
+        $('#noacepto').on('click', function(){
+            $("#noacepto").css("top", `${getRandomArbitrary(0,700)}px`);
+            $("#noacepto").css("left", `${getRandomArbitrary(0,300)}px`);
+            veces++;
+            if(veces == 3)
+            {
+                alert('mentira veni yo tambien quiero')
+            }
+        })
+    </script>
+
+</body>
+</html>
