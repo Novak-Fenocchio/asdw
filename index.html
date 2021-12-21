@@ -26,13 +26,13 @@
 </head>
 <body>
     <h1>
-    hey caro no encuentro la forma elegante de decirtelo: 
+    hey flor no encuentro la forma elegante de preguntartelo: 
     </h1>
 
 
-    <h5>quiero ver chueck con vos</h5>
-    <input type="button" id='acepto' value="acepto">
-    <input type="button" id='noacepto' value="no acepto">
+    <h5>el dia que hagamos pizzas, un sabado al mediodia, prometes que no se te va a acabar la paciencia por mis estupideces¿ </h5>
+    <input type="button" id='acepto' value="por supuesto que si, soy una persona civilizada">
+    <input type="button" id='noacepto' value="no">
 
 
     <script
@@ -44,7 +44,7 @@
 
     <script>
         $('#acepto').on('click', function(){
-            alert('teamo');
+            alert('muchasgracias');
             alert('ahora apreta que no.');
         })
 
@@ -55,7 +55,7 @@
         let veces = 0;
 
         $('#noacepto').on('click', function(){
-            $("#noacepto").css("top", `${getRandomArbitrary(0,700)}px`);
+            $("#noacepto").css("top", `${getRandomArbitrary(0,300)}px`);
             $("#noacepto").css("left", `${getRandomArbitrary(0,300)}px`);
             veces++;
             if(veces == 3)
